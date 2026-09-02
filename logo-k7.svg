@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="100%" height="100%">
+  <defs>
+    <!-- Cyan to Royal Blue Neon Gradient -->
+    <linearGradient id="k7BlueAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#38bdf8" />
+      <stop offset="60%" stopColor="#2563eb" />
+      <stop offset="100%" stopColor="#1d4ed8" />
+    </linearGradient>
+
+    <!-- Metallic Silver/White for High Contrast on Dark Backgrounds -->
+    <linearGradient id="k7WhiteBody" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#ffffff" />
+      <stop offset="100%" stopColor="#e2e8f0" />
+    </linearGradient>
+
+    <!-- Filter for subtle drop glow -->
+    <filter id="k7Glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#2563eb" flood-opacity="0.5" />
+    </filter>
+  </defs>
+
+  <g filter="url(#k7Glow)">
+    <!-- 1. Left Polygon of 'K' -->
+    <polygon 
+      points="218,255 390,255 258,388 172,416 82,520 238,520 408,628 540,628 250,520 198,468" 
+      fill="url(#k7WhiteBody)" 
+    />
+
+    <!-- 2. Main Diagonal Blade of 'K' -->
+    <polygon 
+      points="490,225 820,225 375,465 172,416 350,255" 
+      fill="url(#k7WhiteBody)" 
+    />
+
+    <!-- 3. Upper & Diagonal Blade of '7' -->
+    <polygon 
+      points="548,372 920,372 675,655 575,655 802,458 522,458" 
+      fill="url(#k7WhiteBody)" 
+    />
+
+    <!-- 4. Royal Blue Triangle / Lower Shard Accent -->
+    <polygon 
+      points="585,775 750,775 905,425" 
+      fill="url(#k7BlueAccent)" 
+    />
+  </g>
+</svg>
